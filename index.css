@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: 'Metrophobic', sans-serif;
+}
+html {
+   background: url('https://c1.staticflickr.com/4/3524/3922798318_1e54628fcb_b.jpg');
+    color: #363946;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
+
+header {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    float: left;
+}
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: block;
+    text-align: right;
+    color: white;
+}
+header ul {
+    margin-top: 50px
+}
+/*Quiz start screen styling*/
+.openingText {
+    background-color: rgb(212,212,212, .5);
+    border-radius: 5px;
+}
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-top: 150px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: #38A9AF;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    width: 100%;
+    text-align: left;
+}
+.startButton {
+    text-align: center;
+    background: linear-gradient(48deg, #dc2719, #ebf33e, #22c61c, #2c62da, #a51ca9);
+    animation-name: Animation;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes Animation { 
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+button:hover, button:focus {
+    background: linear-gradient(48deg, #dc2719, #ebf33e, #22c61c, #2c62da, #a51ca9);
+    color: black;
+}
+main div {
+    margin: 0 auto;
+}
+label:nth-child(1) {
+    background-color: rgb(14, 161, 26)
+}
+label:nth-child(2) {
+    background-color: rgb(11, 112, 194)
+}
+label:nth-child(3) {
+    background-color: rgb(122, 24, 214)
+}
+label:nth-child(4) {
+    background-color: rgb(224, 44, 44)
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px;
+    border-radius: 5px;
+}
+label:hover:nth-child(1), label:focus:nth-child(1) {
+    background-color: rgb(133, 170, 136)
+}
+label:hover:nth-child(2), label:focus:nth-child(2) {
+    background-color: rgb(138, 170, 197)
+}
+label:hover:nth-child(3), label:focus:nth-child(3) {
+    background-color: rgb(179, 137, 218)
+}
+label:hover:nth-child(4), label:focus:nth-child(4){
+    background-color: rgb(214, 125, 125)
+}
+fieldset {
+    border: none;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 25%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid #ebca52;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+h2 {
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+.questionTitle {
+  background-color: rgb(212,212,212, .75);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: #ebca52;
+    color: #363946;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+form button:hover, form button:focus {
+    background-color: #363946;
+    color: black;
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    display: none;
+    width: 50%;
+}
+.correctFeedback {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 8px;
+    background: linear-gradient(48deg, #dc2719, #ebf33e, #22c61c, #2c62da, #a51ca9);
+    animation: Animation 6s ease infinite;
+}
+
+.correctFeedback button {
+    width: 100%
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.correctFeedback span {
+    color: #AF6438;
+}
+.correctFeedback img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+}
+h3 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.results img {
+    width: 300px;
+    height: auto;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    color: white;
+}
+.restartButton {
+    margin-top: 40px;
+    text-align: center;
+}
+@media screen and (max-width: 1190px) {
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: auto;
+    }
+    header ul {
+        margin: 10px;
+        text-align: center
+    }
+    h1 {
+        font-size: 1.5em
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 18px
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }
+    h2 {
+        font-size: 18px
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0
+    }
+    label {
+        font-size: 16px;
+        padding: 15px
+    }
+    .correctFeedback img {
+        width: 200px;
+        height: auto
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px
+    }
+    .results p:first-of-type {
+        font-size: 18px
+    }
+    h3 {
+        font-size: 25px
+    }
+}
